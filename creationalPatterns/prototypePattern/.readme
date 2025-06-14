@@ -1,0 +1,10 @@
+The Prototype Pattern is a creational design pattern used to clone existing objects instead of constructing them from scratch. It enables efficient object creation, especially when the initialization process is complex or costly.   
+
+
+
+Here first we create one object during compilation of class and store it in maps ,whenever we require
+anothe instance we will just return the clone of the object and make the modifications so that other won't be affected.
+
+that is why we have setter method for content in constructor we have default .
+
+if object is complex ,don't follow prototype .because deep cloning will be difficult and it might introduce bugs

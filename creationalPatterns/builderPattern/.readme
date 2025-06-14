@@ -1,0 +1,21 @@
+The Builder Pattern is a creational design pattern that addresses problems related to object creation mechanisms. It is especially useful when constructing complex objects step-by-step with various optional components.
+
+Why Use the Builder Pattern?
+.Often in software systems, especially when building configurations or composite objects, the number of constructor arguments can get out of hand. Builder Pattern provides:
+
+.Clarity in object creation
+.Step-by-step construction
+.Immutability of the final object
+.Better readability and maintainability
+
+-------the need came due to lack of optional parameters in java--------
+
+The Builder Pattern allows you to construct a complex object (like BurgerMeal) in multiple steps, such as:
+
+
+BurgerMeal meal = new BurgerMeal.Builder()
+    .setBun("Italian")
+    .setPatty("Veg")
+    .addFries(true)
+    .addColdDrink(true)
+    .build();
