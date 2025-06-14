@@ -1,0 +1,5 @@
+1. we will develop interfaces and it's respective classes for different things and we will implement it . -product
+2.we will have a factory interface which will define all methods to define for object creation.- factory for product
+3. now we will create a service which will define all those normal(product) interfaces as attributes and we will pass factoroy as 
+    parameter in constructor so that it will intialize all the variables.
+ we will define one method which has only bussiness logic -that's all.
