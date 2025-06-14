@@ -12,7 +12,7 @@ public class EmailRegistry {
     }
     //this function returns the clone of the created object so that when we 
     //have object creation costly we can just clone it.
-    public static EmailTemplate getObject(String key){
+    public static EmailTemplate getTemplate(String key){
         return templates.get(key).clone();
     }
 }
