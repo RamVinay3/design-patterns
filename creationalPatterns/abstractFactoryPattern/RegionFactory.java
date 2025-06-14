@@ -1,12 +1,13 @@
 package creationalPatterns.abstractFactoryPattern;
 
-
+//abstract factory
 public interface RegionFactory {
     PaymentGateway createPaymentGateway(String mode);
     Invoice generateInvoice();
 }
 
 
+//concrete factory
 class IndianFactory implements RegionFactory{
     public PaymentGateway createPaymentGateway(String mode){
 
@@ -28,6 +29,7 @@ class IndianFactory implements RegionFactory{
 
     }
 }
+//concrete factory
 class USFactory implements RegionFactory{
     public PaymentGateway createPaymentGateway(String mode){
         switch (mode.toUpperCase()) {
