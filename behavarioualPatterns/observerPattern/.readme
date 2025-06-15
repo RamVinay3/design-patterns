@@ -1,0 +1,7 @@
+The Observer Pattern is a behavioral design pattern that defines a dependency between objects, where a change in one object (the subject) results in automatic updates to all dependent objects (observers).
+
+It promotes a loose coupling between the subject and its observers, improving flexibility and reusability.
+
+-------------------
+1.create interfaces for both subscribers(listeners) and Channel(Subject - central object)
+2.implement those concrete classes .

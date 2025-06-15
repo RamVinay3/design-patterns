@@ -17,3 +17,5 @@ The remote is the iterator that lets you navigate a complex system (TV channels)
 2.implement iteration logic using a class 
 3.create another interface which will return the iterator .
 4.implement above class , now we can pass the list we want to iterate to the iterator through this class using a normal method.
+-------------------------------------
+You can have multiple iterators on the same collection at the same time, each maintaining its own state.
