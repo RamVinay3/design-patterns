@@ -1,0 +1,12 @@
+The Facade Pattern is a structural design pattern that provides a simplified, unified interface to a complex subsystem or group of classes.
+
+It acts as a single entry point for clients to interact with the system, hiding the underlying complexity and making the system easier to use.
+
+
+If we see the example we have taken,client is clicking on book movie ticket, then in the backend
+The facade is taking care of all the services like payment , reserving seat, sending notification ,
+generating ticket and loyality addPoints
+we cannot give all of these options separately to the user , so we create a facade to all of them under one service call.
+
+
+-----we need to use interface for better coding in future ,just to understand we call classes over there--------
