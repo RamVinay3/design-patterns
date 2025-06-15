@@ -2,3 +2,7 @@ The Composite Pattern is a structural design pattern that allows you to compose 
 
 
 leaf - Product ,composite - bundles or combinations of those products in single entity
+
+we want to treat composite and individual objects as single object , please do carefully whether we want to consider composite and single as same or not.
+
+Eg:Cart of amazon or flipkart

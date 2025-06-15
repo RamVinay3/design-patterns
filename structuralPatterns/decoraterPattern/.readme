@@ -1,0 +1,23 @@
+Decorator Pattern
+
+The Decorator Pattern is a structural design pattern that allows behavior to be added to individual objects, dynamically at runtime, without affecting the behavior of other objects from the same class.
+
+It wraps an object inside another object that adds new behaviors or responsibilities at runtime, keeping the original object's interface intact.
+
+It solves the problem of class explosion that occurs when you try to use inheritance to add combinations of behavior.
+
+Think of a coffee shop:
+You order a simple coffee.
+Then, you can add milk, add sugar, add whipped cream, etc.
+You don't need a whole new drink class for every combination.
+
+
+--if we follow inheritance for a simple pizza toppings,below are the combinations but we don't require that many.
+class PlainPizza {}
+class CheesePizza extends PlainPizza {}
+class OlivePizza extends PlainPizza {}
+class StuffedPizza extends PlainPizza {}
+class CheeseStuffedPizza extends CheesePizza {}
+class CheeseOlivePizza extends CheesePizza {}
+class CheeseOliveStuffedPizza extends CheeseOlivePizza {}
+They are all just toppings over original pizza. -to avoid class expolosions when we add other topping we are gonna use this.

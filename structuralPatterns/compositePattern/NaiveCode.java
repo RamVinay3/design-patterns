@@ -71,7 +71,7 @@ class Main {
         schoolKit.addProduct(notebook);
         
         // Add to cart logic
-        List<Object> cart = new ArrayList<>();
+        List<Object> cart = new ArrayList<>();//dirty code ,never recommended to write Object as it's type
         cart.add(book);
         cart.add(iphoneCombo);
         cart.add(schoolKit);
