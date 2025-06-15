@@ -1,0 +1,23 @@
+The Bridge Pattern is a structural design pattern that is used to decouple an abstraction from its implementation so 
+that the two can vary independently.
+
+
+Problem It Solves
+
+When you have multiple dimensions of variability, such as different types of features (abstractions) and multiple implementations of those features, you might end up with a combinatorial explosion of subclasses if you try to use inheritance to handle all combinations. 
+
+Thus bridge pattern:
+Avoids tight coupling between abstraction and implementation.
+Eliminates code duplication that would occur if every combination of abstraction and implementation had its own class.
+Promotes composition over inheritance, allowing more flexible code evolution.
+
+
+When to use Bridge Pattern
+
+Bridge Pattern is particularly useful when:
+
+You have multiple dimensions of variation
+You want to decouple abstraction from implementation
+You anticipate frequent changes or additions
+You want to follow SOLID principles
+You want runtime flexibility
