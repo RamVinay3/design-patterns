@@ -26,7 +26,12 @@ public class YoutubeChannel implements Channel{
     public void upload(String title) {
 
         System.out.println("The "+name+"  channel uplaoded "+ title);
-        for(Subscriber s:subscribers){
+       this.notifyUsers(title);
+    }
+
+    @Override
+    public void notifyUsers(String title) {
+         for(Subscriber s:subscribers){
             s.update(title);
         }
        
