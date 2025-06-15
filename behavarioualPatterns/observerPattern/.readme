@@ -5,3 +5,17 @@ It promotes a loose coupling between the subject and its observers, improving fl
 -------------------
 1.create interfaces for both subscribers(listeners) and Channel(Subject - central object)
 2.implement those concrete classes .
+
+------------------------
+when to use it:
+
+1.A change in object should automatically notifiy all others.
+2.you want to decouple object and subject.
+3.dynamic subscription /unsubscription
+------------------------
+when to avoid it:
+1.you have too many observers (when celebrity goes live )-better to use either pub-sub or event queues
+2.tight control over notification timing is required -use message broker to publish events(billing - notifySeller-delivery -notification) so much process.
+
+
+ observers works well with small number of observers and to scale we need to move to event driven architecture-sockets are good i guess. 
