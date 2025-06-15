@@ -1,0 +1,19 @@
+One such pattern is the Iterator Pattern, which provides a consistent way to traverse elements in a collection 
+without exposing its internal structure.
+
+It decouples the traversal logic from the collection itself, making the code cleaner, more modular, and flexible.
+
+generally used in all collections if you see already.
+----------------------------------------------------------
+Think of a TV remote control:
+You can go channel by channel using the "next" and "previous" buttons.
+You don’t need to know how the TV stores or organizes the channels internally.
+You just use a consistent interface to move through the list.
+
+The remote is the iterator that lets you navigate a complex system (TV channels) without dealing with internal mechanisms.
+----------------------------------------------------
+
+1. create an interface for iteration
+2.implement iteration logic using a class 
+3.create another interface which will return the iterator .
+4.implement above class , now we can pass the list we want to iterate to the iterator through this class using a normal method.
