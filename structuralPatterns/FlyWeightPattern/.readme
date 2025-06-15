@@ -1,0 +1,24 @@
+The Flyweight Pattern is a structural design pattern used to minimize memory usage by sharing as much data as possible with similar objects.
+
+It separates the intrinsic (shared) state from the extrinsic (unique) state, so that shared parts of objects are stored only once and reused wherever needed.
+
+
+
+
+-------------------Real-Life Analogy--------------------------------
+Think of trees in a video game. In an open-world video game, you might see thousands of trees:
+All oak trees have the same texture, shape, and behavior (shared/intrinsic).
+But their location, size, or health status may differ (extrinsic).
+
+Eg: Trees in google Maps, cars and autos in Uber.
+
+They are same object and will pop up automatically in different co-ordinate (only thing that changes), if we create new object everytime
+it end up using lot of memory.
+
+foucs on optimising memory consumption
+
+---------------------------------------------------
+
+1.We will identify which attributes are common(intrisinic attributes) and which are different(extrisinic attributes).
+2.We will create a separate class for the intrisinic attributes (fly weight class)
+3.we will create one factory method for that class ,so that it will only create object once and use it's reference later.
