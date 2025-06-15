@@ -1,0 +1,7 @@
+instead of accessing real object directly we will extend the real class with another class(proxy) and we will apply
+the either caching ,filtering,logging etc., or any thing we want to do.
+
+
+The Proxy Pattern is a structural design pattern that provides a surrogate or placeholder for another object to control access to it.
+
+A proxy acts as an intermediary that implements the same interface as the original object, allowing it to intercept and manage requests to the real object.
