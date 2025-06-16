@@ -1,0 +1,37 @@
+The Command Pattern is a behavioral design pattern that turns a request into a standalone object containing all the information about the request.
+
+This separation allows you to parameterize methods with different requests, queue or log them, and support operations like undo and redo.
+
+generally what anyone will do who don't know the design pattersn
+
+class Light{
+    public void on();
+    public void off();
+}
+class Fan{
+    public void on();
+    public void off();
+}
+where as the command design pattern is saying to write each command as separate class
+
+class LightOn{
+    public void execute();//turns on
+    public void undo();//turns off
+}
+class LightOff{
+    public void execute();//turns off
+    public void undo();//turns on
+}
+//do same for fan as well.
+
+-------pattern-------
+Four important key components
+1.client
+2.Invoker(remote in this case)
+3.Command
+4.Receiver(Light,Fan)
+------------process----------
+
+1.client sets the invoker
+2.Invoker is going to trigger a command
+3.Reciver - receiver the command and perform logic .
