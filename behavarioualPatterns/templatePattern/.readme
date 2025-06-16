@@ -1,0 +1,36 @@
+The Template Method Pattern is a behavioral design pattern that defines the program skeleton in a method (template method), allowing subclasses to redefine certain steps without changing the algorithm’s structure.
+
+-----------------------------------------
+It lets you reuse common behavior while enabling subclasses to customize specific parts of the process.
+
+Real-Life Analogy
+
+Think of preparing tea or coffee:
+
+The overall steps are the same — boil water, brew beverage, pour in cup, and optionally add extras.
+The boiling and pouring steps are the same for both, but the brewing (tea leaves or coffee grounds) differs.
+The template method defines the fixed structure, while subclasses (tea or coffee makers) override the variable parts.
+
+------------------------------------------
+
+This pattern ensures that the overall algorithm remains consistent while allowing specific steps to be customized.
+
+Problem It Solves
+
+It solves the problem of duplicating code across multiple classes that follow a similar process, but differ in a few steps. For example, consider you need:
+
+To implement a data parser for XML, JSON, and CSV — with a shared structure but different parsing logic
+A framework that performs generic operations with customizable steps (e.g., hooks for plugins)
+Different types of games that follow the same setup/play/end flow, but implement gameplay differently
+
+Instead of repeating the entire algorithm in each class, the Template Method Pattern lets you define the common flow once and let subclasses override only the variable parts through methods like hook() or customStep().
+
+
+---------------------------------Key Steps------------------------
+1.Template Method(final method in base class)
+2.primitive operations(abstract methods)
+3.concrete operations(final or privated methods)
+4.Hooks(optional methods with default behaviour)
+
+------------
+if you see we enforce particular steps for every notification ,so when we want specific steps to be followed somehwere we can implement it.
