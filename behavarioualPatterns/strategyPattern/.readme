@@ -1,0 +1,16 @@
+The Strategy Pattern is a behavioral design pattern that enables selecting an algorithm’s behavior at runtime.
+
+It separates the algorithm logic from the object that uses it, making the code more flexible and easier to maintain or extend.
+---------------------------------
+Real-Life Analogy
+Think of a navigation app like Google Maps:
+You can choose different travel strategies – driving, walking, biking, or public transit.
+The destination remains the same, but the route changes based on the chosen strategy.
+You don't have to rewrite the whole navigation system for each travel mode – you just switch the strategy.
+
+The app acts as a context, and each travel mode is a strategy you can apply based on user preference or situation.
+It solves the problem of hardcoding algorithm-specific logic directly into classes.
+---------------
+It feels like factory pattern and this is same , there we are returning object ,here we are also doing the same.
+In factory we create object based on condition where as here we are just passing new object directly to constructor.
+so we are calling algo in the end.
