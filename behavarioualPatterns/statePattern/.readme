@@ -1,0 +1,13 @@
+The State Pattern is a behavioral design pattern that lets an object change its behavior when its internal state changes.
+
+It encapsulates state-specific logic into separate classes and delegates behavior to the current state, improving flexibility and maintainability.
+-----------when to use it--------
+
+1.whenever object behaviour depends upon it's internal state
+2.state transitions are well-defined and finite.
+3.you want to avoid complex if-else or switch statements
+4.state transitions should be explicit
+5.you want each state to have it's own rules and behaviour
+
+------------it's very near to command pattern - but we don't pass context over there 
+in a page , the state should change depending upon next step eg. swiggy order.
