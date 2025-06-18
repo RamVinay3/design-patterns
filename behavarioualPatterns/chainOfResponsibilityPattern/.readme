@@ -1,0 +1,23 @@
+The Chain of Responsibility Pattern is a behavioral design pattern that lets you send a request through a chain of handlers. Each handler decides either to process the request or to pass it to the next handler in the chain.
+
+This pattern decouples the sender and receiver, allowing multiple objects to process a request without the sender knowing who will handle it.
+
+---------------------------------------
+Real-Life Analogy
+Think of a customer service help desk:
+A customer request starts with a support agent.
+If the issue is too complex, it is escalated to a supervisor, and possibly to a manager.
+Each level decides whether to handle the issue or pass it along the chain.
+
+Each support level is a handler, and the customer request moves along until someone resolves it.
+
+------------------------------------------
+Problem It Solves
+It solves the problem of tight coupling between request senders and receivers. For example, you might have:
+Different levels of logging (info, warning, error)
+Permission checks in a system with multiple roles
+Validation rules applied in sequence
+
+Instead of writing conditional logic in a single class, the Chain of Responsibility Pattern lets you organize handlers sequentially, each with its own responsibility.
+
+eg: call center
