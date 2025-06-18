@@ -1,0 +1,11 @@
+The Memento Pattern is a behavioral design pattern that enables you to save and restore the previous state of an object without exposing its internal details.
+
+It’s particularly useful when implementing features like undo/redo functionality or restoring a snapshot of an object’s state.
+----------------
+Real-Life Analogy
+Think of playing a video game:
+You can save your progress at a specific point in time.
+If something goes wrong (like your character dies), you can load the saved game and continue from that point.
+You don’t need to know the exact game internals — just press "Save" or "Load."
+
+The saved game is a memento, the game engine is the originator, and the game menu is the caretaker managing the saved states.
