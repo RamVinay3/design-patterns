@@ -1,0 +1,11 @@
+The Visitor Pattern is a behavioral design pattern that lets you add further operations to objects without modifying them.
+
+It separates an algorithm from the object structure it operates on, enabling operations to be added by external visitor classes.
+
+Real-Life Analogy
+Think of a tax auditor visiting different departments in a company:
+Each department (HR, Finance, IT) is a different object with its own data and structure.
+The auditor (visitor) applies specific operations or checks for each department.
+The departments don’t need to know the auditor’s logic—they just "accept" the visit.
+
+The auditor performs different actions depending on the department visited, but the department itself doesn’t need to change.
