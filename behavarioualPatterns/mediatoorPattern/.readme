@@ -1,0 +1,17 @@
+The Mediator Pattern is a behavioral design pattern that promotes loose coupling by keeping objects from referring to each other explicitly.
+
+Instead, they communicate through a mediator object, which encapsulates how these objects interact.
+Real-Life Analogy
+Think of an air traffic controller at an airport:
+Pilots of different planes don’t talk to each other directly.
+Instead, each pilot communicates with the air traffic controller (mediator), who coordinates all landing, takeoff, and navigation to avoid collisions.
+This centralized communication keeps operations safe and organized.
+
+The air traffic controller acts as the mediator, managing the interaction between multiple independent aircraft.
+Problem It Solves
+It solves the problem of tightly coupled communication between components. For example, consider:
+A chat application where users send messages to each other in a group.
+A GUI form where multiple components (like buttons, sliders, and inputs) need to coordinate their behavior.
+Collaborative systems like project management tools with interconnected modules.
+
+Instead of having each component manage its dependencies, the Mediator Pattern lets you delegate interaction logic to a central mediator that handles coordination in a cleaner and more manageable way.
